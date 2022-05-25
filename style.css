@@ -1,0 +1,71 @@
+/* *
+{
+    box-sizing: border-box;
+} */
+body{
+    background-color: #fffec9;
+}
+.header
+{
+    overflow: hidden;
+    background-color: #729bb3;
+    /* align-items: center; */
+}
+.header a
+{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    border: solid 2px #729bb3;
+} 
+.header a.logo
+{
+    margin: 0;
+}
+.itens a:hover
+{
+    border: solid 2px #96d9ff;
+}
+.itens
+{
+    margin: auto;
+    float: right;
+}
+.itens a
+{
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+.header hr
+{
+    display: none;
+}
+.quemSomos
+{
+    background-color: #96d9ff;
+}
+@media screen and (max-width: 500px)
+{
+    .header a 
+    {
+        float: none;
+        display: block;
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .itens
+    {
+        float: none;
+    }
+    .header hr
+    {
+        display: block;
+        margin: 0;
+    }
+}
