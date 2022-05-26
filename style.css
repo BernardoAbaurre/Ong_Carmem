@@ -47,11 +47,39 @@ body{
 }
 .quemSomos
 {
+    text-align: center;
     background-color: #96d9ff;
+    padding: 30px;
+    color: white;
+}
+.quemSomos h1
+{
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+    height: fit-content;
+    width: fit-content;
+    text-decoration: underline;
+}
+.conteudoQS
+{
+    text-align: left;
+    display: flex;
+}
+.textoQS
+{
+    vertical-align: middle;
+    margin: auto;
+    font-size: 2vw;
+}
+#imgFamilia
+{
+    max-width: 400px;
+    width: 50vw;
 }
 @media screen and (max-width: 500px)
 {
-    .header a 
+    .header a
     {
         float: none;
         display: block;
@@ -68,4 +96,15 @@ body{
         display: block;
         margin: 0;
     }
+    /* quem somos */
+    .conteudoQS
+    {
+        display: block;
+        text-align: center;
+    }
+    #imgFamilia
+    {
+        margin-top: 10px;
+    }
+    
 }
