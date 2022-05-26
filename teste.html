@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body
+    {
+      background-color: rgb(53, 52, 50);
+    }
+    .imgSeta
+    {
+      transition: 0.4s;
+    }
+    .change .imgSeta
+    {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="btnSeta" onclick="funcao(this)">
+  <img class="imgSeta" src="imagens/seta-para-baixo (1).png">
+  </div>
+  <script>
+    function funcao(x)
+    {
+      x.classList.toggle("change")
+    }
+  </script>
+</body>
+</html>

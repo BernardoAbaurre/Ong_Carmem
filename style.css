@@ -5,13 +5,13 @@
 body{
     background-color: #fffec9;
 }
-.header
+.header, .menu
 {
     overflow: hidden;
     background-color: #729bb3;
-    /* align-items: center; */
+    align-items: center;
 }
-.header a
+.header a, .menu a
 {
     float: left;
     color: white;
@@ -113,10 +113,51 @@ body{
     max-width: 400px;
     width: 50vw;
 }
+.btnSeta
+{
+    display: none;
+}
+.menu
+{
+    display: none;
+}
 
 @media screen and (max-width: 500px)
 {
-    .header a
+    .btnSeta
+    {
+        cursor: pointer;
+        display: block;
+        float: right;
+        margin: auto;
+        margin-top: 36px;
+        margin-right: 20px;
+        background-color: transparent;
+        border: none;
+    }
+    .imgSeta
+    {
+        transition: 0.4s;
+    }
+    .change .imgSeta
+    {
+        transform: rotate(180deg);
+    }
+    .logo
+    {
+        width: fit-content;
+        margin: auto;
+    }
+   
+    .header > .itens
+    {
+        display: none;
+    }
+    .menu
+    {
+        transition: max-height 0.2s ease-out;
+    }
+    .menu a
     {
         float: none;
         display: block;
@@ -128,7 +169,7 @@ body{
     {
         float: none;
     }
-    .header hr
+    .header hr, .menu hr
     {
         display: block;
         margin: 0;
