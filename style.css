@@ -123,6 +123,45 @@ body{
     position: fixed;
     width: 100vh;
 }
+.contatos > ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+#telefone, #facebook
+{
+    margin-bottom: 15px;
+}
+.icone
+{
+    width: 5vh;
+    height: 5vh;
+    margin-right: 5px;
+}
+.contatos
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.rodape
+{
+    background-color: #729bb3;
+    color: white;
+    margin-bottom: 0;
+}
+.rodape > h1
+{
+    text-align: center;
+    margin: auto;
+    text-decoration: underline;
+}
+#direitos
+{
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    margin-top: 0;
+}
 
 @media screen and (max-width: 500px)
 {
