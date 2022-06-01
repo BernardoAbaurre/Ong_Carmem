@@ -120,7 +120,8 @@ body{
 .menu
 {
     display: none;
-    position: fixed;
+    position: absolute;
+    z-index: 1;
     width: 100vh;
 }
 .contatos > ul
@@ -147,7 +148,10 @@ body{
 {
     background-color: #729bb3;
     color: white;
+    font-size: 2.5vh;
     margin-bottom: 0;
+    height: fit-content;
+    padding-bottom: 15px;
 }
 .rodape > h1
 {
@@ -158,13 +162,26 @@ body{
 #direitos
 {
     text-align: center;
-    margin-bottom: 15px;
     text-decoration: underline;
+    margin-bottom: 0;
     margin-top: 0;
 }
 
 @media screen and (max-width: 500px)
 {
+    .contatos
+    {
+        display: block;
+        text-align: center;
+    }
+    .CTTesq
+    {
+        margin-bottom: 0;
+    }
+    .CTTdir
+    {
+        margin-top: 5px;
+    }
     .btnSeta
     {
         cursor: pointer;

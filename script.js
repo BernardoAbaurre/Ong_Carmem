@@ -13,3 +13,10 @@ function menu(x)
         estado = 0
     }
 }
+function fechar()
+{
+    if(estado == 1)
+    {
+        menu(document.getElementsByClassName('btnSeta')[0])
+    }
+}
