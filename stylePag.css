@@ -1,0 +1,11 @@
+body
+{
+    background-color: #fffec9;
+    text-align: center;
+    font: normal 10pt arial;
+}
+button
+{
+    width: fit-content;
+    font-size: 20pt;
+}
